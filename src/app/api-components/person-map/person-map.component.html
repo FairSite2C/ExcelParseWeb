@@ -1,0 +1,200 @@
+<div>
+  <div>
+    <h3>{{person.name}} - {{company.name}}</h3> 
+  </div>
+
+  <div *ngIf="errs.length != 0">
+      <label *ngFor="let i of errs" >{{i}}</label> 
+  </div>
+
+  <div *ngIf="phase == 1">
+    <!-- start input parameters -->
+    <h3>Search Parameters</h3>
+    <table >
+      <thead>
+        <td >Column</td>
+        <td >Comparer</td>
+        <td >Value</td>
+        <td ><span *ngIf="saleSearch.searchParameters.length>0">Add</span> 
+          <input type="button" value="Add" *ngIf="saleSearch.searchParameters.length==0" (click)="addSearchRow(0);"/>
+        </td>
+        <td >Delete</td>
+      </thead> 
+      <tbody>
+        <tr *ngFor="let row of saleSearch.searchParameters; let i = index">
+          <td>
+            <select [(ngModel)]="row.column"> 
+              <option *ngFor="let mc of masterMap.columns" [ngValue]="lowerFirstLetter(mc.columnName)" >{{mc.header}}</option> 
+            </select>
+          </td>
+          <td>
+            <select [(ngModel)]="row.compare"> 
+              <option value="1" >Equal To</option> 
+              <option value="2" >Not Equal To</option> 
+              <option value="3" >Greater Than </option> 
+              <option value="4" >Greater or Equal To</option> 
+              <option value="5" >Less Than</option> 
+              <option value="6" >Less or Equal To</option> 
+              <option value="7" >Begins With</option> 
+              <option value="8" >Contains</option> 
+            </select>
+          </td>
+          <td><input type="text" [(ngModel)]="row.value" /></td>
+          <td><input type="button" value="Add" (click)="addSearchRow(i);"/></td>
+          <td><input type="button" value="Delete" (click)="deleteSearchRow(i);"/></td>
+        </tr> 
+      </tbody>
+    </table>
+
+    <h3>Sort Parameters</h3>
+    <table >
+      <thead>
+        <td >Column</td>
+        <td >Direction</td>
+        <td ><span *ngIf="saleSearch.sortParameters.length>0">Add</span> 
+          <input type="button" value="Add" *ngIf="saleSearch.sortParameters.length==0" (click)="addSortRow(0);"/>
+        </td>
+        <td >Delete</td>
+      </thead> 
+      <tbody>
+        <tr *ngFor="let row of saleSearch.sortParameters; let i = index">
+          <td>
+            <select [(ngModel)]="row.column"> 
+              <option *ngFor="let mc of masterMap.columns" [ngValue]="lowerFirstLetter(mc.columnName)" >{{mc.header}}</option> 
+            </select>
+          </td>
+          <td>
+            <select [(ngModel)]="row.desc"> 
+              <option value="false" >A - Z</option> 
+              <option value="true" >Z - A</option> 
+            </select>
+          </td>
+          <td><input type="button" value="Add" (click)="addSortRow(i);"/></td>
+          <td><input type="button" value="Delete" (click)="deleteSortRow(i);"/></td>
+        </tr> 
+      </tbody>
+    </table>
+
+    <!-- end input parameters -->
+    <br/>
+    <input type="button" value="Test Sales" (click)="searchSales()"/>
+    <h3>Choose Upload Area</h3>
+    <select [(ngModel)]="masterMap"> 
+      <option *ngFor="let i of masterMaps" [ngValue]="i">{{i.name}}</option> 
+    </select>
+    <br/>
+    <input type="radio" id="r1" name="mapOptions" value="1" [(ngModel)]="useMap">
+    <br/>
+    <label for="r1">List Only My Maps</label>
+    <br/>
+
+    <input type="radio" id="r2" name="mapOptions" value="2" [(ngModel)]="useMap">
+    <label for="r2">List Show All Company's Maps</label>
+    <br/>
+    
+    <input type="button" value="Next" (click)="clickNext()"/>
+    
+  </div>
+
+  <div *ngIf="phase == 2">
+    
+    <h3>List of person maps</h3>
+    
+    <select [(ngModel)]="personMap"> 
+      <option *ngFor="let i of personMaps" [ngValue]="i">{{i.name}}</option> 
+    </select>
+    <br/>
+    
+    <input type="button" value="Previous" (click)="clickPrevious()"/>
+    <input type="button" value="Add New" (click)="addNew()"/>
+    <input type="button" value="Upload Files" (click)="clickNext()"/>
+    
+  </div>
+
+  <div *ngIf="phase == 3">
+  
+    <h3>upload files {{personMap.name}}</h3>
+
+     <form>
+        <input id="myForm" type="file" name="file" (change)="postSheets($event.target.files)">
+        <input type="button" value="Run" (click)="clickNext()"/>
+    </form>        
+    <br/>
+ 
+    <input type="button" value="Previous" (click)="clickPrevious()"/>
+  </div>
+
+  <div *ngIf="phase == 4">
+  
+    <h3>Create New Map</h3>
+
+    <div *ngIf="!sampleUploaded">
+        <form>
+            <input id="myForm" type="file" name="file" (change)="postForHeaders($event.target.files)">
+        </form>        
+    </div>
+    
+    <div *ngIf="sampleUploaded">
+    
+      <label>Map Name</label><input type="text" [(ngModel)]="addMap.name" /> 
+      <br/>
+ 
+      <table >
+        <thead>
+          <td>OriginsRx</td><td>Your Header</td>
+        </thead> 
+        <tbody>
+          <tr *ngFor="let i of addMap.columns">
+            <td>{{i.ourHeader}}<span *ngIf="i.required" style="color:red;font-weight:bold">*</span></td>
+            <td>
+              <select [(ngModel)]="i.theirHeader"> 
+                <option *ngFor="let ii of theirHeaders" value="i" >{{ii}}</option> 
+              </select>
+            </td>    
+          </tr> 
+        </tbody>
+      </table>
+      <br/>
+ 
+      <input type="button" value="Try A Different File" (click)="sampleUploaded = false"/>
+      <input type="button" value="Save" (click)="saveNew()"/>
+    
+    </div>
+    
+    <input type="button" value="Previous" (click)="phase = 2"/>
+  
+  </div>
+
+  <div *ngIf="phase == 5">
+  
+    <h3>Sales Search Results</h3>
+    
+    <div >
+      <br/>
+      <table style="border:2px;color:black">
+        <thead>
+          <td *ngFor="let col of masterMap.columns">
+            {{col.header}}
+          </td>
+        </thead> 
+        <tbody>
+          <tr *ngFor="let row of sales.items">
+            <td *ngFor="let col of masterMap.columns">
+               {{getRowValue(row,col.columnName)}}
+            </td>
+          </tr> 
+        </tbody>
+      </table>
+      <br/>
+ 
+      <input type="button" value="First" (click)="pageSales(1)"/>
+      <input type="button" value="Previous" (click)="pageSales(2)"/>
+      <input type="button" value="Next" (click)="pageSales(3)"/>
+      <input type="button" value="Last" (click)="pageSales(4)"/>
+    </div>
+    <br/>  
+    <input type="button" value="Cancel" (click)="phase = 1"/>
+  
+  </div>
+
+</div>

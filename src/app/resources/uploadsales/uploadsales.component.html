@@ -1,0 +1,32 @@
+<p>1</p>
+<button class="button btn-info" *ngIf='showFile' (click)='showFiles(false)'>Hide Files</button>
+
+<button class="button btn-info" *ngIf='!showFile' (click)='showFiles(true)'>Show Files</button>
+
+<div [hidden]="!showFile">
+ <div class="panel panel-primary">
+   <div class="panel-heading">List of Files</div>
+   <div *ngFor="let file of fileUploads | async">
+     <div class="panel-body">
+       <!-- <details-upload [fileUpload]='file'></details-upload> -->
+     </div>
+   </div>
+ </div>
+</div>
+
+<div *ngIf="currentFileUpload" class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{progress.percentage}}"
+    aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
+    {{progress.percentage}}%</div>
+</div>
+ 
+<!-- <label class="btn btn-default">
+  <input type="file" (change)="selectFile($event)">
+</label> -->
+<div>
+  <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
+  <input type="file" (change)="selectFile($event)" accept=".xlsx, .xls, .csv">   
+</div>
+<a href="http://localhost:8080/api/files/{{fileUpload}}">{{fileUpload}}</a> 
+
+<h2 >File uploaded by: {{this.getCurrentUser()}}</h2>

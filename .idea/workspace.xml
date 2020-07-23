@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de78021d-07d6-403f-ab35-d853c8beff8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee-list/employee-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee-list/employee-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee-list/employee-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee-list/employee-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee/employee.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee/employee.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee/employee.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employee/employee.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employees.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employees.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employees.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/employee/employees.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lostdrs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lostdrs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lostdrs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/lostDRs/lostdrs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/national-goals/national-goals.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/national-goals/national-goals.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/national-goals/national-goals.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/national-goals/national-goals.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/nationalgoals.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/nationalgoals.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/nationalgoals.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/nationalGoals/nationalgoals.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/new-drs/new-drs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/new-drs/new-drs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/new-drs/new-drs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/new-drs/new-drs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/newdrs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/newdrs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/newdrs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/newDRs/newdrs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/rep-goals/rep-goals.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/rep-goals/rep-goals.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/rep-goals/rep-goals.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/rep-goals/rep-goals.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/repgoals.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/repgoals.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/repgoals.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/repGoals/repgoals.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/top-cities/top-cities.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/top-cities/top-cities.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/top-cities/top-cities.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/top-cities/top-cities.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/topcities.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/topcities.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/topcities.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCities/topcities.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/top-companies/top-companies.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/top-companies/top-companies.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/top-companies/top-companies.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/top-companies/top-companies.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/topcompanies.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/topcompanies.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/topcompanies.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topCompanies/topcompanies.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/top-drs/top-drs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/top-drs/top-drs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/top-drs/top-drs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/top-drs/top-drs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/topdrs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/topdrs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/topdrs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDRs/topdrs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/top-drugs/top-drugs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/top-drugs/top-drugs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/top-drugs/top-drugs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/top-drugs/top-drugs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/topdrugs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/topdrugs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/topdrugs.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topDrugs/topdrugs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/top-state/top-state.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/top-state/top-state.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/top-state/top-state.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/top-state/top-state.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/topstates.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/topstates.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/topstates.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/topStates/topstates.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/trackers/tracker/tracker.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/trackers/tracker/tracker.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/trackers/tracker/tracker.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/trackers/tracker/tracker.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/trackers/trackers.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sales/trackers/trackers.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sales/trackers/trackers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sales/trackers/trackers.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#781#841#0" expanded="true" />
+                <element signature="e#1054#1109#0" expanded="true" />
+                <element signature="e#1590#1664#0" expanded="true" />
+                <element signature="e#1816#1886#0" expanded="true" />
+                <element signature="e#2097#2165#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/environments/environment.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-292">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>displayedColumns</find>
+      <find>environment</find>
+      <find>firebase</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.html" />
+        <option value="$PROJECT_DIR$/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/src/main.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="34" />
+    <option name="y" value="23" />
+    <option name="width" value="1406" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mar18FE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mar18FE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mar18FE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mar18FE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mar18FE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mar18FE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mar18FE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mar18FE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mar18FE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mar18FE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:2020">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de78021d-07d6-403f-ab35-d853c8beff8d" name="Default Changelist" comment="" />
+      <created>1552172625325</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552172625325</updated>
+      <workItem from="1552172626767" duration="2500000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2500000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24391988" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/sales/lostDRs/lostdrs.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/dashboard/dashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/lostDRs/lostdrs.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="48" column="3" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/sales/lostDRs/lost-drs/lost-drs.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#781#841#0" expanded="true" />
+            <element signature="e#1054#1109#0" expanded="true" />
+            <element signature="e#1590#1664#0" expanded="true" />
+            <element signature="e#1816#1886#0" expanded="true" />
+            <element signature="e#2097#2165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
